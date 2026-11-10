@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://noranyi50619.github.io/kcarbon-portfolio/sitemap.xml
+Sitemap: https://kcarbon-al-practice.netlify.app/sitemap.xml
