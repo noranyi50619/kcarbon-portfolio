@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200">
+  <title>탄소섬유 직물을 크게 확대하고 금빛 섬유 한 가닥이 가로지르는 일러스트</title>
+  <defs>
+    <linearGradient id="fh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc" stop-opacity=".3"/><stop offset=".5" stop-color="#f8fafc" stop-opacity=".04"/><stop offset="1" stop-color="#f8fafc" stop-opacity=".18"/></linearGradient>
+    <linearGradient id="fv" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f8fafc" stop-opacity=".3"/><stop offset=".5" stop-color="#f8fafc" stop-opacity=".04"/><stop offset="1" stop-color="#f8fafc" stop-opacity=".18"/></linearGradient>
+    <pattern id="weave" width="72" height="72" patternUnits="userSpaceOnUse" patternTransform="rotate(-28)">
+      <rect width="72" height="72" fill="#020617"/>
+      <rect x="3" y="3" width="30" height="30" rx="7" fill="url(#fh)"/>
+      <rect x="39" y="3" width="30" height="30" rx="7" fill="url(#fv)"/>
+      <rect x="3" y="39" width="30" height="30" rx="7" fill="url(#fv)"/>
+      <rect x="39" y="39" width="30" height="30" rx="7" fill="url(#fh)"/>
+    </pattern>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset=".2" stop-color="#ffffff" stop-opacity="0"/><stop offset=".48" stop-color="#ffffff" stop-opacity=".16"/><stop offset=".62" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+    <radialGradient id="vig" cx="900" cy="600" r="1100" gradientUnits="userSpaceOnUse"><stop offset=".35" stop-color="#020617" stop-opacity="0"/><stop offset="1" stop-color="#020617" stop-opacity=".9"/></radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f59e0b" stop-opacity="0"/><stop offset=".25" stop-color="#f59e0b"/><stop offset=".6" stop-color="#fffbeb"/><stop offset=".85" stop-color="#f59e0b"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></linearGradient>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="26"/></filter>
+  </defs>
+  <rect width="1800" height="1200" fill="#020617"/>
+  <rect width="1800" height="1200" fill="url(#weave)"/>
+  <rect width="1800" height="1200" fill="url(#sheen)"/>
+  <rect width="1800" height="1200" fill="url(#vig)"/>
+  <path d="M-60,940 C380,800 700,860 1000,660 S1560,420 1860,380" fill="none" stroke="#f59e0b" stroke-width="80" stroke-opacity=".45" filter="url(#glow)"/>
+  <path d="M-60,940 C380,800 700,860 1000,660 S1560,420 1860,380" fill="none" stroke="url(#gold)" stroke-width="22" stroke-linecap="round"/>
+  <path d="M-60,934 C380,794 700,854 1000,654 S1560,414 1860,374" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="3"/>
+  <g fill="#fffbeb">
+    <circle cx="1000" cy="660" r="6"/><circle cx="1000" cy="660" r="22" opacity=".25"/>
+    <circle cx="1440" cy="470" r="3" opacity=".8"/><circle cx="560" cy="834" r="3" opacity=".8"/>
+  </g>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900">
+  <title>세 갈래 고민이 하나의 창구로 모이는 일러스트</title>
+  <defs>
+    <linearGradient id="fh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc" stop-opacity=".2"/><stop offset=".5" stop-color="#f8fafc" stop-opacity=".03"/><stop offset="1" stop-color="#f8fafc" stop-opacity=".12"/></linearGradient>
+    <linearGradient id="fv" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f8fafc" stop-opacity=".2"/><stop offset=".5" stop-color="#f8fafc" stop-opacity=".03"/><stop offset="1" stop-color="#f8fafc" stop-opacity=".12"/></linearGradient>
+    <pattern id="weave" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+      <rect width="28" height="28" fill="#020617"/>
+      <rect x="1.5" y="1.5" width="11" height="11" rx="2.5" fill="url(#fh)"/>
+      <rect x="15.5" y="1.5" width="11" height="11" rx="2.5" fill="url(#fv)"/>
+      <rect x="1.5" y="15.5" width="11" height="11" rx="2.5" fill="url(#fv)"/>
+      <rect x="15.5" y="15.5" width="11" height="11" rx="2.5" fill="url(#fh)"/>
+    </pattern>
+    <linearGradient id="fadeTop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#020617"/><stop offset=".5" stop-color="#020617" stop-opacity=".4"/><stop offset="1" stop-color="#020617" stop-opacity="0"/></linearGradient>
+    <radialGradient id="glow" cx="400" cy="650" r="430" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f59e0b" stop-opacity=".42"/><stop offset=".45" stop-color="#f59e0b" stop-opacity=".1"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient>
+    <linearGradient id="topFace" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffbeb"/><stop offset=".6" stop-color="#f59e0b"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fffbeb" stop-opacity=".9"/><stop offset=".35" stop-color="#f59e0b" stop-opacity=".45"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc" stop-opacity=".14"/><stop offset="1" stop-color="#f8fafc" stop-opacity=".03"/></linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <rect width="800" height="900" fill="#020617"/>
+  <rect width="800" height="900" fill="url(#weave)" opacity=".6"/>
+  <rect width="800" height="900" fill="url(#fadeTop)"/>
+  <rect width="800" height="900" fill="url(#glow)"/>
+
+  <!-- 궤도 -->
+  <ellipse cx="400" cy="672" rx="330" ry="122" fill="none" stroke="#f59e0b" stroke-opacity=".28" stroke-width="1.5"/>
+  <ellipse cx="400" cy="672" rx="384" ry="148" fill="none" stroke="#f8fafc" stroke-opacity=".12" stroke-width="1.2" stroke-dasharray="3 12"/>
+
+  <!-- 빛 기둥 -->
+  <rect x="376" y="250" width="48" height="400" fill="url(#beam)" filter="url(#soft)" opacity=".7"/>
+  <rect x="396" y="300" width="8" height="345" fill="url(#beam)"/>
+
+  <!-- 연결선 -->
+  <g fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round">
+    <path d="M190,432 C190,545 320,570 392,628" stroke-dasharray="2 10"/>
+    <path d="M610,432 C610,545 480,570 408,628" stroke-dasharray="2 10"/>
+  </g>
+  <g fill="#f59e0b">
+    <circle cx="190" cy="432" r="5"/><circle cx="610" cy="432" r="5"/><circle cx="400" cy="342" r="5"/>
+    <circle cx="262" cy="560" r="3.5" opacity=".7"/><circle cx="538" cy="560" r="3.5" opacity=".7"/>
+  </g>
+
+  <!-- 하나의 창구: 육각 플랫폼 -->
+  <ellipse cx="400" cy="720" rx="250" ry="70" fill="#f59e0b" opacity=".45" filter="url(#blur)"/>
+  <polygon points="570,640 485,721 485,767 570,686" fill="#020617"/>
+  <polygon points="570,640 485,721 485,767 570,686" fill="#f8fafc" opacity=".1"/>
+  <polygon points="485,721 315,721 315,767 485,767" fill="#020617"/>
+  <polygon points="485,721 315,721 315,767 485,767" fill="#f8fafc" opacity=".18"/>
+  <polygon points="315,721 230,640 230,686 315,767" fill="#020617"/>
+  <polygon points="315,721 230,640 230,686 315,767" fill="#f8fafc" opacity=".06"/>
+  <polyline points="570,686 485,767 315,767 230,686" fill="none" stroke="#f59e0b" stroke-opacity=".5" stroke-width="1.5"/>
+  <polygon points="570,640 485,721 315,721 230,640 315,559 485,559" fill="url(#topFace)"/>
+  <polygon points="512,640 456,693.4 344,693.4 288,640 344,586.6 456,586.6" fill="none" stroke="#020617" stroke-opacity=".28" stroke-width="2"/>
+  <polygon points="456,640 428,666.7 372,666.7 344,640 372,613.3 428,613.3" fill="#fffbeb" stroke="#020617" stroke-opacity=".3" stroke-width="2"/>
+  <circle cx="400" cy="640" r="26" fill="#fffbeb" filter="url(#soft)"/>
+  <circle cx="400" cy="640" r="9" fill="#ffffff"/>
+
+  <!-- 세 갈래 고민 카드 -->
+  <g font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-weight="700" text-anchor="middle">
+    <g transform="translate(190,300) rotate(-6)">
+      <rect x="-75" y="-75" width="150" height="150" rx="30" fill="url(#card)" stroke="#f59e0b" stroke-opacity=".6" stroke-width="1.5"/>
+      <g transform="translate(-36,-36) scale(3)" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3.5 7.5v9L12 21l8.5-4.5v-9L12 3Z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></g>
+      <text y="112" font-size="22" fill="#f8fafc" fill-opacity=".9">시제품</text>
+    </g>
+    <g transform="translate(400,210)">
+      <rect x="-75" y="-75" width="150" height="150" rx="30" fill="url(#card)" stroke="#f59e0b" stroke-opacity=".6" stroke-width="1.5"/>
+      <g transform="translate(-36,-36) scale(3)" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></g>
+      <text y="112" font-size="22" fill="#f8fafc" fill-opacity=".9">특허</text>
+    </g>
+    <g transform="translate(610,300) rotate(6)">
+      <rect x="-75" y="-75" width="150" height="150" rx="30" fill="url(#card)" stroke="#f59e0b" stroke-opacity=".6" stroke-width="1.5"/>
+      <g transform="translate(-36,-36) scale(3)" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></g>
+      <text y="112" font-size="22" fill="#f8fafc" fill-opacity=".9">해외진출</text>
+    </g>
+  </g>
+
+  <!-- 떠다니는 입자 -->
+  <g fill="#f59e0b">
+    <polygon points="96,150 84,171 60,171 48,150 60,129 84,129" opacity=".35"/>
+    <polygon points="742,176 735,188 721,188 714,176 721,164 735,164" opacity=".6"/>
+    <polygon points="708,520 701,532 687,532 680,520 687,508 701,508" opacity=".3"/>
+    <polygon points="110,560 103,572 89,572 82,560 89,548 103,548" opacity=".45"/>
+  </g>
+  <g fill="#f8fafc">
+    <circle cx="300" cy="96" r="2" opacity=".6"/><circle cx="520" cy="80" r="1.6" opacity=".5"/><circle cx="660" cy="420" r="2" opacity=".5"/><circle cx="140" cy="420" r="1.6" opacity=".5"/><circle cx="560" cy="840" r="2" opacity=".4"/><circle cx="220" cy="830" r="1.6" opacity=".4"/>
+  </g>
+</svg>

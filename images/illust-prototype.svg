@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+  <title>탄소섬유 직물이 시제품 부품으로 바뀌는 과정을 표현한 일러스트</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffbeb"/><stop offset="1" stop-color="#f8fafc"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#020617" stroke-opacity=".06" stroke-width="1"/></pattern>
+    <pattern id="gridL" width="200" height="200" patternUnits="userSpaceOnUse"><path d="M200 0H0V200" fill="none" stroke="#020617" stroke-opacity=".08" stroke-width="1.5"/></pattern>
+    <linearGradient id="fh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc" stop-opacity=".26"/><stop offset=".5" stop-color="#f8fafc" stop-opacity=".04"/><stop offset="1" stop-color="#f8fafc" stop-opacity=".16"/></linearGradient>
+    <linearGradient id="fv" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f8fafc" stop-opacity=".26"/><stop offset=".5" stop-color="#f8fafc" stop-opacity=".04"/><stop offset="1" stop-color="#f8fafc" stop-opacity=".16"/></linearGradient>
+    <pattern id="weaveIso" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="matrix(0.866 0.5 -0.866 0.5 0 0)">
+      <rect width="30" height="30" fill="#020617"/>
+      <rect x="1.5" y="1.5" width="12" height="12" rx="2.5" fill="url(#fh)"/>
+      <rect x="16.5" y="1.5" width="12" height="12" rx="2.5" fill="url(#fv)"/>
+      <rect x="1.5" y="16.5" width="12" height="12" rx="2.5" fill="url(#fv)"/>
+      <rect x="16.5" y="16.5" width="12" height="12" rx="2.5" fill="url(#fh)"/>
+    </pattern>
+    <pattern id="weaveSide" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="matrix(0.866 0.5 0 1 0 0)">
+      <rect width="30" height="30" fill="#020617"/>
+      <rect x="1.5" y="1.5" width="12" height="12" rx="2.5" fill="url(#fh)"/>
+      <rect x="16.5" y="1.5" width="12" height="12" rx="2.5" fill="url(#fv)"/>
+      <rect x="1.5" y="16.5" width="12" height="12" rx="2.5" fill="url(#fv)"/>
+      <rect x="16.5" y="16.5" width="12" height="12" rx="2.5" fill="url(#fh)"/>
+    </pattern>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".45" stop-color="#ffffff" stop-opacity=".22"/><stop offset=".6" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+    <radialGradient id="hole" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#f59e0b" stop-opacity=".55"/><stop offset="1" stop-color="#020617"/></radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect width="1600" height="1200" fill="url(#grid)"/>
+  <rect width="1600" height="1200" fill="url(#gridL)"/>
+  <circle cx="1080" cy="780" r="300" fill="#f59e0b" opacity=".28" filter="url(#blur)"/>
+  <polygon points="800,180 900,353 800,526 600,526 500,353 600,180" fill="none" stroke="#f59e0b" stroke-opacity=".35" stroke-width="2"/>
+
+  <!-- 탄소섬유 직물 판 -->
+  <ellipse cx="520" cy="830" rx="230" ry="46" fill="#020617" opacity=".18" filter="url(#shadow)"/>
+  <polygon points="300,676 520,803 520,787 300,660" fill="#020617"/>
+  <polygon points="520,803 740,676 740,660 520,787" fill="#020617"/>
+  <polygon points="520,803 740,676 740,660 520,787" fill="#f8fafc" opacity=".14"/>
+  <polygon points="300,660 520,533 740,660 520,787" fill="url(#weaveIso)"/>
+  <polygon points="300,660 520,533 740,660 520,787" fill="url(#sheen)"/>
+  <polyline points="300,660 520,787 740,660" fill="none" stroke="#f8fafc" stroke-opacity=".4" stroke-width="2"/>
+  <!-- 풀려 나온 섬유 -->
+  <g fill="none" stroke="#f59e0b" stroke-linecap="round">
+    <path d="M700,630 C760,590 790,560 840,560" stroke-width="3" opacity=".8"/>
+    <path d="M712,646 C770,620 800,600 850,600" stroke-width="2" opacity=".55"/>
+  </g>
+
+  <!-- 화살표 -->
+  <path d="M770,520 C830,450 890,460 924,540" fill="none" stroke="#f59e0b" stroke-width="7" stroke-linecap="round"/>
+  <polygon points="936,572 904,538 942,526" fill="#f59e0b"/>
+
+  <!-- 시제품 부품 (속이 빈 탄소 튜브) -->
+  <ellipse cx="1080" cy="1000" rx="280" ry="50" fill="#020617" opacity=".2" filter="url(#shadow)"/>
+  <polygon points="876.1,820 1161.9,985 1161.9,865 876.1,700" fill="url(#weaveSide)"/>
+  <polygon points="876.1,820 1161.9,985 1161.9,865 876.1,700" fill="#020617" opacity=".25"/>
+  <polygon points="1265.8,925 1161.9,985 1161.9,865 1265.8,805" fill="#020617"/>
+  <polygon points="1265.8,925 1161.9,985 1161.9,865 1265.8,805" fill="#f8fafc" opacity=".12"/>
+  <polygon points="1245,913 1182.7,949 1182.7,877 1245,841" fill="url(#hole)"/>
+  <polygon points="980,640 1265.8,805 1161.9,865 876.1,700" fill="url(#weaveIso)"/>
+  <polygon points="980,640 1265.8,805 1161.9,865 876.1,700" fill="url(#sheen)"/>
+  <polyline points="876.1,700 1161.9,865 1265.8,805" fill="none" stroke="#f8fafc" stroke-opacity=".5" stroke-width="2.5"/>
+  <line x1="1161.9" y1="865" x2="1161.9" y2="985" stroke="#f8fafc" stroke-opacity=".3" stroke-width="2"/>
+
+  <!-- 치수선 -->
+  <g stroke="#f59e0b" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <line x1="980" y1="630" x2="980" y2="575" stroke-dasharray="4 8" stroke-width="2"/>
+    <line x1="1265.8" y1="795" x2="1265.8" y2="740" stroke-dasharray="4 8" stroke-width="2"/>
+    <line x1="980" y1="580" x2="1265.8" y2="745"/>
+    <line x1="972" y1="568" x2="988" y2="592"/>
+    <line x1="1257.8" y1="733" x2="1273.8" y2="757"/>
+    <line x1="866" y1="820" x2="830" y2="820" stroke-dasharray="4 8" stroke-width="2"/>
+    <line x1="866" y1="700" x2="830" y2="700" stroke-dasharray="4 8" stroke-width="2"/>
+    <line x1="840" y1="700" x2="840" y2="820"/>
+    <line x1="828" y1="700" x2="852" y2="700"/>
+    <line x1="828" y1="820" x2="852" y2="820"/>
+  </g>
+  <polygon points="1122.9,650 1134,662.5 1122.9,675 1111.8,662.5" fill="#f59e0b"/>
+
+  <!-- 시험·인증 배지 -->
+  <circle cx="1268" cy="1010" r="50" fill="#f59e0b"/>
+  <circle cx="1268" cy="1010" r="38" fill="none" stroke="#020617" stroke-opacity=".35" stroke-width="2" stroke-dasharray="3 6"/>
+  <path d="m1248,1011 14,14 26,-30" fill="none" stroke="#020617" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 반짝임 -->
+  <g fill="#f59e0b">
+    <path d="M1330,520 l8,26 26,8 -26,8 -8,26 -8,-26 -26,-8 26,-8z"/>
+    <path d="M440,430 l5,16 16,5 -16,5 -5,16 -5,-16 -16,-5 16,-5z" opacity=".7"/>
+    <path d="M1180,470 l4,12 12,4 -12,4 -4,12 -4,-12 -12,-4 12,-4z" opacity=".6"/>
+  </g>
+</svg>

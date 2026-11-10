@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200">
+  <title>빛나는 육각형 탄소 격자가 바닥처럼 펼쳐진 일러스트</title>
+  <defs>
+    <pattern id="hex" width="210" height="121.24" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#f59e0b" stroke-width="2.4" stroke-opacity=".55">
+        <polygon points="70,0 35,60.62 -35,60.62 -70,0 -35,-60.62 35,-60.62"/>
+        <polygon points="280,0 245,60.62 175,60.62 140,0 175,-60.62 245,-60.62"/>
+        <polygon points="70,121.24 35,181.86 -35,181.86 -70,121.24 -35,60.62 35,60.62"/>
+        <polygon points="280,121.24 245,181.86 175,181.86 140,121.24 175,60.62 245,60.62"/>
+        <polygon points="175,60.62 140,121.24 70,121.24 35,60.62 70,0 140,0"/>
+      </g>
+    </pattern>
+    <radialGradient id="glow" cx="900" cy="780" r="760" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f59e0b" stop-opacity=".4"/><stop offset=".45" stop-color="#f59e0b" stop-opacity=".08"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#020617"/><stop offset=".38" stop-color="#020617" stop-opacity=".75"/><stop offset=".7" stop-color="#020617" stop-opacity="0"/></linearGradient>
+    <radialGradient id="side" cx="900" cy="760" r="1050" gradientUnits="userSpaceOnUse"><stop offset=".45" stop-color="#020617" stop-opacity="0"/><stop offset="1" stop-color="#020617" stop-opacity=".95"/></radialGradient>
+    <linearGradient id="cell" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffbeb"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
+    <polygon id="h" points="70,0 35,60.62 -35,60.62 -70,0 -35,-60.62 35,-60.62"/>
+  </defs>
+  <rect width="1800" height="1200" fill="#020617"/>
+  <rect width="1800" height="1200" fill="url(#glow)"/>
+  <!-- 바닥처럼 눕힌 격자 -->
+  <g transform="translate(0 360) scale(1 .62)">
+    <rect x="-400" y="-600" width="2600" height="1600" fill="url(#hex)"/>
+    <g filter="url(#blur)" fill="#f59e0b" opacity=".75">
+      <use href="#h" x="840" y="727.44"/><use href="#h" x="945" y="666.82"/>
+    </g>
+    <use href="#h" x="840" y="727.44" fill="url(#cell)"/>
+    <use href="#h" x="945" y="666.82" fill="#f59e0b"/>
+    <use href="#h" x="945" y="788.06" fill="#f59e0b" opacity=".55"/>
+    <use href="#h" x="735" y="666.82" fill="#f59e0b" opacity=".35"/>
+    <use href="#h" x="1050" y="727.44" fill="#f59e0b" opacity=".3"/>
+    <use href="#h" x="840" y="606.2" fill="#f59e0b" opacity=".22"/>
+    <use href="#h" x="630" y="727.44" fill="#f59e0b" opacity=".14"/>
+    <use href="#h" x="1155" y="666.82" fill="#f59e0b" opacity=".14"/>
+    <g fill="#fffbeb">
+      <circle cx="910" cy="727.44" r="7"/><circle cx="875" cy="788.06" r="7"/><circle cx="1015" cy="666.82" r="7"/><circle cx="980" cy="606.2" r="6"/><circle cx="770" cy="727.44" r="6"/><circle cx="805" cy="666.82" r="5"/><circle cx="1085" cy="788.06" r="5"/>
+    </g>
+  </g>
+  <rect width="1800" height="1200" fill="url(#fade)"/>
+  <rect width="1800" height="1200" fill="url(#side)"/>
+  <!-- 위로 떠오르는 입자 -->
+  <g fill="#f59e0b">
+    <circle cx="900" cy="560" r="4" opacity=".9"/><circle cx="960" cy="480" r="3" opacity=".7"/><circle cx="850" cy="420" r="2.5" opacity=".6"/><circle cx="1010" cy="360" r="2" opacity=".5"/><circle cx="880" cy="300" r="2" opacity=".4"/>
+  </g>
+</svg>

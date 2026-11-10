@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <title>센터 위치를 상징하는 지도 모양 일러스트 (실제 지도가 아님)</title>
+  <defs>
+    <pattern id="blocks" width="180" height="140" patternUnits="userSpaceOnUse" patternTransform="rotate(-12)">
+      <rect width="180" height="140" fill="#fffbeb"/>
+      <rect x="18" y="18" width="144" height="104" rx="16" fill="#ffffff" stroke="#020617" stroke-opacity=".06" stroke-width="2"/>
+    </pattern>
+    <radialGradient id="vig" cx="600" cy="450" r="760" gradientUnits="userSpaceOnUse"><stop offset=".55" stop-color="#f8fafc" stop-opacity="0"/><stop offset="1" stop-color="#f8fafc" stop-opacity=".95"/></radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#blocks)"/>
+  <!-- 물길 -->
+  <path d="M-50,170 C250,250 450,110 700,190 S1050,250 1250,140" fill="none" stroke="#020617" stroke-opacity=".07" stroke-width="80" stroke-linecap="round"/>
+  <!-- 큰길 -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M-50,720 C300,620 700,560 1250,320" stroke="#020617" stroke-opacity=".08" stroke-width="58"/>
+    <path d="M-50,720 C300,620 700,560 1250,320" stroke="#ffffff" stroke-width="46"/>
+    <path d="M-50,720 C300,620 700,560 1250,320" stroke="#f59e0b" stroke-opacity=".6" stroke-width="3" stroke-dasharray="18 16"/>
+    <path d="M330,-50 C380,300 520,560 640,950" stroke="#020617" stroke-opacity=".08" stroke-width="44"/>
+    <path d="M330,-50 C380,300 520,560 640,950" stroke="#ffffff" stroke-width="34"/>
+    <path d="M900,-50 C860,260 820,560 880,950" stroke="#020617" stroke-opacity=".08" stroke-width="36"/>
+    <path d="M900,-50 C860,260 820,560 880,950" stroke="#ffffff" stroke-width="26"/>
+  </g>
+  <!-- 녹지 -->
+  <g fill="#f59e0b" fill-opacity=".18">
+    <polygon points="1080,640 1040,709 960,709 920,640 960,571 1040,571"/>
+    <polygon points="230,330 205,373 155,373 130,330 155,287 205,287"/>
+  </g>
+  <rect width="1200" height="900" fill="url(#vig)"/>
+  <!-- 위치 표시 -->
+  <ellipse cx="600" cy="560" rx="150" ry="44" fill="#f59e0b" fill-opacity=".2"/>
+  <ellipse cx="600" cy="560" rx="92" ry="27" fill="#f59e0b" fill-opacity=".3"/>
+  <ellipse cx="600" cy="566" rx="40" ry="12" fill="#020617" opacity=".25" filter="url(#shadow)"/>
+  <path d="M600,560 c-38,-46 -60,-72 -60,-104 a60,60 0 1 1 120,0 c0,32 -22,58 -60,104z" fill="#020617"/>
+  <polygon points="626,456 613,478.5 587,478.5 574,456 587,433.5 613,433.5" fill="#f59e0b"/>
+  <!-- 이름표 -->
+  <g font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-weight="700" text-anchor="middle">
+    <rect x="470" y="300" width="260" height="76" rx="38" fill="#020617"/>
+    <polygon points="590,374 610,374 600,388" fill="#020617"/>
+    <text x="600" y="333" font-size="18" fill="#f59e0b">전주</text>
+    <text x="600" y="360" font-size="22" fill="#f8fafc">기업응답센터</text>
+  </g>
+</svg>
