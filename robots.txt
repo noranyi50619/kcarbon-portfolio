@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 배포 후 [배포 후 입력] 부분을 실제 홈페이지 주소로 바꾸세요
+Sitemap: https://[배포 후 입력]/sitemap.xml
